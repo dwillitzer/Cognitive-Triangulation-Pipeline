@@ -1,6 +1,6 @@
 const path = require('path');
 const { v4: uuidv4 } = require('uuid');
-const { getDeepseekClient } = require('../utils/deepseekClient');
+const { getLLMClient } = require('../utils/llmClientFactory');
 const { getDb } = require('../utils/sqliteDb');
 
 class RelationshipResolver {

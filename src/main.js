@@ -13,7 +13,7 @@ const GraphBuilderWorker = require('./agents/GraphBuilder');
 const TransactionalOutboxPublisher = require('./services/TransactionalOutboxPublisher');
 const config = require('./config');
 const { v4: uuidv4 } = require('uuid');
-const { getDeepseekClient } = require('./utils/deepseekClient');
+const { getLLMClient } = require('./utils/llmClientFactory');
 
 class CognitiveTriangulationPipeline {
     constructor(targetDirectory, dbPath = './database.db') {

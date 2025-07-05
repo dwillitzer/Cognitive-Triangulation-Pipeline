@@ -15,7 +15,7 @@ const fs = require('fs').promises;
 const { spawn } = require('child_process');
 
 class PipelineApiService {
-    constructor(port = 3002) {
+    constructor(port = process.env.API_PORT || 47391) {
         this.app = express();
         this.server = http.createServer(this.app);
         this.wss = new WebSocketServer({ server: this.server });

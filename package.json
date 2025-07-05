@@ -17,6 +17,7 @@
     "test:neo4j:ip": "cross-env NEO4J_URI=bolt://127.0.0.1:7687 node test_neo4j_connection.js"
   },
   "dependencies": {
+    "@anthropic-ai/claude-code": "^1.0.43",
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1",
     "axios": "^1.6.2",
